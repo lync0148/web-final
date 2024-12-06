@@ -4,25 +4,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Scissors Hair Salon</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  </body>
-</html>
-
-<head>
+ 
+  
 <nav class="navbar navbar-expand-lg" style="background-color: #e6e7e8;">
   <div class="container-fluid">
-    <img src="images/scissorslogo.jpg" alt="scissors logo" width="200" height="30">
+    <img class="nav-logo" src="images/scissorslogo.jpg" alt="scissors logo" width="200" height="30">
     
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    
     <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
       <ul class="navbar-nav">
         <li class="nav-item">
@@ -43,43 +40,138 @@
       </ul>
     </div>
     <div class="ms-auto">
-      <button type="button" class="btn btn-secondary" style="outline: none; background-color: #893F51; color: #ffffff;">Book Appointment</button>
+      <button type="button" class="button-main btn btn-secondary" style="outline: none; background-color: #893F51; color: #ffffff;">Book Appointment</button>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
     </div>
   </div>
 </nav>
 </head>
 
 <main>
-    <section id="hero">
-      <div class="container-fluid position-relative">
-
-        <img src="images/royaltyfree/page1/herobanner.jpg" class="img-fluid hero-image w-100 h-100 object-fit-cover" alt="products-on-display">
-
-
-       <divc class="cta-info" >
-        <div class="position-absolute top-50 end-0 translate-middle-y">
-            <h1 class="text-end mb-4">Call Now!</h1>
-        
-
-
-                <div class="col-md-6 text-center">
-                        <h2>Stittsville</h2>
-                        <h3>6081 Hazeldean Road</h3>
-                        <h4>613-836-5882</h4>
-                        <button type="button" class="btn btn-secondary btn-sm" style="outline: none;">Book Appointment</button> 
-                     </div>
-          <div class="col-md-6 text-center">
+  <section id="hero">
+    <div class="container-fluid position-relative">
+      <img src="images/royaltyfree/page1/page-one-hero-banner.jpg" class="img-fluid hero-image w-100 h-100 object-fit-cover" alt="products-on-display">
+      <div class="position-absolute top-50 start-50 translate-middle-y d-flex flex-column align-items-center">
+        <div class="text-center mb-4">
+          <h1 class="call-now">Call Now!</h1>
+        </div>
+        <div class="d-flex justify-content-center">
+          <div class="cta-locations text-center me-3">
+            <h2>Stittsville</h2>
+            <h3>6081 Hazeldean Road</h3>
+            <h4>613-836-5882</h4>
+            <button type="button" class="btn btn-secondary btn-sm" style="outline: none;">Book Appointment</button>
+          </div>
+          <div class="cta-locations text-center">
             <h2>Kanata</h2>
             <h3>499 Terry Fox Drive</h3>
             <h4>613-592-8107</h4>
             <button type="button" class="btn btn-secondary btn-sm" style="outline: none;">Book Appointment</button>
-        </div>
+          </div>
         </div>
       </div>
-     </div> 
     </div>
-    </section>
-  </main>
+  </section>
 
 
 
+
+
+
+
+    <section class="stittsville-location-brief" style="background-color: #e6e7e8;">
+      <div class="container-fluid position-relative">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+        <img src="images/royaltyfree/page1/salon-interior-1.webp" alt="stittville salon interior" class="img-fluid stittsville-interior" width="550">
+        </div>
+        <div class="col-md-6 stittsville-home-desc">
+        <h2>Stittsville</h2>
+        <h3>6081 Hazeldean Road</h3>
+        <p>Discover the perfect blend of style and relaxation at our Stittsville hair salon, where every appointment transforms your hair into a masterpiece. With a dedicated team of experienced stylists, we offer personalized services tailored to your unique look, ensuring you leave feeling rejuvenated and confident.</p>
+      </div>
+     </div>
+    </div>
+  </section>
+
+
+  <section class="kanata-location-brief" style="background-color: #ffffff;">
+    <div class="container-fluid position-relative">
+      <div class="row align-items-center">
+        <div class="col-md-5 kanata-home-desc">
+          <h2>Kanata</h2>
+      <h3>499 Terry Fox Drive</h3>
+      <p>Elevate your look and indulge in a luxurious hair experience at Kanata’s premier salon. Our expert stylists combine cutting-edge techniques with a keen eye for individual style, creating stunning transformations that reflect your personality. From vibrant colours to precision cuts and nourishing treatments, we're committed to bringing out your best.</p>
+      </div>
+      <div class="col-md-6">
+        <img src="images/royaltyfree/page1/salon-interior-3.jpg" alt="kanata salon interior" class="img-fluid kanata-interior" width="850">
+    </div>
+   </div>
+  </div>
+</section>
+
+<section class="meet-the-owners" style="background-color: #e6e7e8;">
+  <div class="container-fluid position-relative">
+  <div class="text-center my-5">
+    <h2 class="owners-container">Meet The Owners!</h2>
+    <div class="row">
+      
+      <div class="col-md-6">
+        <div class="text-center">
+          <img src="images/royaltyfree/page1/jen.webp" alt="Jennifer McCartney" class="img-fluid card-jen mb-4" style="width: 50%; height: 50%;">
+          <h3 class="mb-4">Jennifer McCartney</h3>
+          <h4 class="mb-4">Stittsville</h4>
+          <blockquote class="blockquote">
+            <p>
+              Being a member of the Scissors team for 14 years, still the best part of my job is how I make my clients feel with the looks I create. 
+              I have a passion for cutting shorter hair as well as embracing and tackling tricky colour challenges. Knowing I have made somebody happy is a great feeling to take home every day.
+            </p>
+          </blockquote>
+        </div>
+      </div>
+      
+      <div class="col-md-6">
+        <div class="owner-card-rocky text-center">
+          <img src="images/royaltyfree/page1/rocky.webp" alt="Rocky Cotoure" class="img-fluid card-rocky mb-4" style="width: 50%; height: 50%;">
+          <h3 class="mb-4">Rocky Cotoure</h3>
+          <h4 class="mb-4">Kanata</h4>
+          <blockquote class="blockquote">
+            <p>
+              Being in the industry for so many years has allowed me to develop my career in many aspects. 
+              I participate in both the styling and management side of scissors and strive to bring our salons to new heights. 
+              Always doing hair and still loving it.
+            </p>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+</section>
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      </body>
+    </html>
+    

@@ -1,0 +1,158 @@
+#hero {
+    width: 100vw;
+    height: auto;
+    
+}
+
+.btn {
+    color: #ffffff;
+    background-color: #893F51;
+    font-size: 0.5rem;
+}
+.button-main {
+  padding: 10px 20px;
+}
+body {
+    font-family: 'Alice', serif;
+  }
+
+.locations-brief {
+    background-color: #e6e7e8;
+  }
+
+
+h1 {
+  font-size: 4rem;
+  text-decoration: underline;
+  text-decoration-color: #893F51;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+.btn {
+  font-size: 1.5rem;
+}
+
+body {
+  font-size: 1.06rem;
+}
+
+.nav-logo {
+  margin-left: 2em;
+}
+
+.button-main {
+  margin-right: 1em;
+}
+
+
+
+
+.position-relative {
+  position: relative; 
+}
+
+.position-absolute {
+  position: absolute; 
+  top: 50%; 
+  left: 75%; 
+  transform: translate(-50%, -50%);
+}
+
+.d-flex {
+  display: flex;
+}
+
+.cta-locations {
+  margin-right: 20px; 
+}
+
+.text-center {
+  text-align: center; 
+}
+
+
+
+.stittsville-location-brief {
+  padding: 100px;
+}
+
+ .kanata-location-brief {
+  padding: 100px;
+ }
+
+ .kanata-interior {
+  padding-left: 125px;
+ }
+
+ .meet-the-owners {
+  padding: 100px;
+ }
+
+ .owners-container {
+  margin-bottom: 20px;
+ }
+.card-jen {
+  padding-bottom: 10px;
+}
+
+.card-rocky {
+  padding-bottom: 10px;
+}
+
+.blockquote {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  h4 {
+    font-size: 0.75rem;
+  }
+
+  body {
+    font-size: 0.75rem;
+    background-color: red !important;
+  }
+}
+
+
+
+
+/* @media (min-width: 500px) {
+  h1 {
+    font-size: 2rem !important; 
+  }
+  h2 {
+    font-size: 1.5rem !important;
+  }
+  h3 {
+    font-size: 1rem !important;
+  }
+  body {
+    font-size: .75rem !important;
+  }
+} */
