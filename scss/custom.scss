@@ -1,0 +1,6 @@
+@import 'animate.css';
+
+.animation {
+    @extend .animate__animated;
+    @extend .animate__fadeInUp;
+}

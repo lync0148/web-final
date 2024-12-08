@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Scissors Hair Salon</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="styles.css">
@@ -11,6 +12,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   </head>
   <body>
  
@@ -23,16 +25,13 @@
     <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#" style="color: #893F51;">Home</a>
+          <a class="nav-link active" aria-current="page" href="index.html" style="color: #893F51;">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#" style="color: #893F51;">Pricing</a>
+          <a class="nav-link" href="pricing.html" style="color: #893F51;">Pricing</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#" style="color: #893F51;">Locations</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#" style="color: #893F51;">Pricing</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#" style="color: #893F51;">Contact</a>
@@ -40,14 +39,27 @@
       </ul>
     </div>
     <div class="ms-auto">
-      <button type="button" class="button-main btn btn-secondary" style="outline: none; background-color: #893F51; color: #ffffff;">Book Appointment</button>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button type="button" class="button-main btn btn-secondary animation-one animate__animated animate__fadeInUp" style="outline: none; background-color: #893F51; color: #ffffff; onclick="promptCall()" >Book Appointment</button>
+      <script>
+      function promptCall() {
+        const userChoice = confirm(
+          "Choose a location to call:\n\nStittsville: 613-836-5882\nKanata: 613-592-8107\n\nPress OK to call Stittsville or Cancel to call Kanata."
+        );
+
+        if (userChoice) {
+          window.location.href = "tel:+16138365882";
+        } else {
+          window.location.href = "tel:+16135928107";
+        }
+      }
+    </script>
+      <button class="navbar-toggler" type="button" 
+      data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
     </div>
   </div>
 </nav>
-</head>
 
 <main>
   <section id="hero">
@@ -58,17 +70,17 @@
           <h1 class="call-now">Call Now!</h1>
         </div>
         <div class="d-flex justify-content-center">
-          <div class="cta-locations text-center me-3">
-            <h2>Stittsville</h2>
-            <h3>6081 Hazeldean Road</h3>
-            <h4>613-836-5882</h4>
-            <button type="button" class="btn btn-secondary btn-sm" style="outline: none;">Book Appointment</button>
+          <div class="cta-locations-stittsville text-center me-3">
+            <h2 class="h2-main">Stittsville</h2>
+            <h3 class="h3-main">6081 Hazeldean Rd</h3>
+            <h4 class="h4-main">613-836-5882</h4>
+            <button type="button" class="button-secondary btn btn-secondary btn-sm animation-one animate__animated animate__fadeInUp" style="outline: none;">Book Appointment</button>
           </div>
-          <div class="cta-locations text-center">
-            <h2>Kanata</h2>
-            <h3>499 Terry Fox Drive</h3>
-            <h4>613-592-8107</h4>
-            <button type="button" class="btn btn-secondary btn-sm" style="outline: none;">Book Appointment</button>
+          <div class="cta-locations-kanata text-center">
+            <h2 class="h2-main">Kanata</h2>
+            <h3 class="h3-main">499 Terry Fox Dr</h3>
+            <h4 class="h4-main">613-592-8107</h4>
+            <button type="button" class="button-secondary btn btn-secondary btn-sm animation-one animate__animated animate__fadeInUp" style="outline: none;">Book Appointment</button>
           </div>
         </div>
       </div>
@@ -131,6 +143,7 @@
           </blockquote>
         </div>
       </div>
+    
       
       <div class="col-md-6">
         <div class="owner-card-rocky text-center">
@@ -148,6 +161,7 @@
       </div>
     </div>
   </div>
+  </div>
 
 
 
@@ -162,6 +176,35 @@
 
  
 
+<footer>
+  <div class="footer-container">
+      <div class="footer-location stittsville-location">
+          <div class="locations-group">
+              <h3 style="color: #893F51;">Stittsvile</h3>
+              <a href="https://www.facebook.com/scissorstitsville" target="_blank">
+  <img class="icon" src="images/royaltyfree/icons/facebook-icon.jpg" alt="Scissors stittsville facebook">
+  </a>
+  <a href="https://www.instagram.com/scissorsstittsville/" target="_blank">
+  <img class="icon" src="images/royaltyfree/icons/instagram-icon.jpg" alt="Scissors stittsville instagram">
+  </a>
+  </div>
+  </div>
+      <div class="brand-logo">
+          <img src="images/scissorslogo.jpg" alt="scissors logo">
+          </div>
+      <div class="footer-location kanata-location">
+              <div class="locations-group">
+                  <h3 style="color: #893F51;">Kanata</h3>
+          <a href="https://www.facebook.com/scissorshairstudio/" target="_blank">
+              <img class="icon" src="images/royaltyfree/icons/facebook-icon.jpg" alt="Scissors kanata facebook">
+              </a>
+              <a href="https://www.instagram.com/scissors_kanata/" target="_blank">
+                  <img class="icon" src="images/royaltyfree/icons/instagram-icon.jpg" alt="Scissors kanata instagram">
+                  </a>
+           </div>
+        </div>
+      </div>
+     </footer>
 
 
 
@@ -169,9 +212,9 @@
 
 
 
-
-
+</main>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
       </body>
     </html>
     
